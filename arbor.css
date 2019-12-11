@@ -1,0 +1,123 @@
+/*Media Section*/
+
+/* Phones & Small Screens */
+@media screen and (min-width: 240px) and (max-width: 480px)
+{
+    body{ margin: auto; padding: auto; }
+    .button-section{ padding: 3em; } 
+    .button-options{ margin: 1em; padding: 1em; }
+    .hero{  display: block; margin: auto; margin-top: 20px; padding-top: 15px; 
+        font-size: 50px; }
+    .info{ text-align: center; }
+    .info p{ padding: 0.5em; font-size: 18px; text-align: justify;}
+    .nav{ padding: auto; width: 100%; }
+    .nav-icon{ width: 80%; display: block; margin: auto; }
+    .subtitle{ width: 100%; display: block; }
+
+    /* Service Div */    
+    .service-info{ display: block; padding: 20px 20px 10px 20px ; margin-top: 10px;
+        position: relative; box-shadow: 0 2px 10px 2px var(--tertiary);}
+    .service-img{ padding: 0px 0px 0px 0px; width: 100%;}     
+    .service-title{ font-size: 22px; }
+    .service-text{ font-size: 18px; text-align: justify;}
+    
+    #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    .button-section{  }
+    .button-options{ font-size: 30px; }
+    .hero{ display: block; padding: 10px; margin: 25px; font-size: 50px; }
+    .info{ padding: 1em; margin: 1em; text-align: center; }
+    .nav{ padding: auto; }
+    .nav-icon{ display: block; width: 40%; margin: auto; }
+    .subtitle{ width: 100%; display: block; }
+
+    /* Service Div */
+    .service-img{ height: inherit; width: 100%; } 
+    .service-info{ display: block; margin: auto; margin-top: 10px; 
+        height: auto; width: 80%; box-shadow: 0 2px 10px 2px var(--tertiary); }
+    .service-title{ font-size: 20px; }
+    .service-text{ text-align: justify; margin: 0px 2px 0px 2px; }
+    
+    #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px){
+    body { width: 80%; margin: auto; }
+    .button-section{ margin: inherit; height: fit-content; width: fit-content; }
+    .button-options{ font-size: 40px;}
+    .hero{ display: block; padding-top: 40px; margin: auto; font-size: 75px; }
+    .info{  margin: auto; text-align: center; width: inherit; }
+    .info p{ font-size: 25px; padding: 1em; }
+    .nav{ padding: auto; }
+    .nav-icon{ display: block; width: 40%; margin: auto; }
+    .other-services{ display: grid; grid-template-columns: 0.5fr 0.5fr; 
+        grid-template-rows: auto; }
+    .subtitle{ width: 100%; display: block; }
+
+    /* Service div */
+    .service-img{ height: inherit; width: inherit; } 
+    .service-info{ display: block; margin: auto; margin-top: 10px; 
+        height: auto; width: 80%; box-shadow: 0 2px 10px 2px var(--tertiary); }
+    .service-title{ font-size: 20px; }
+    .service-text{ text-align: justify; margin: 0px 2px 0px 2px; }
+    
+    #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
+}
+
+:root{
+    --primary: #4D6D44;
+    --secondary: #559245;
+    --tertiary: #B9DEAF;
+    --accent-1: #ECCC02;
+    --accent-2: #866C20;
+    --accent-3: #F8F8F8;
+}
+
+html{ font-family: 'Maitree' , serif; }
+
+footer{ background-color: var(--accent-2); color: var(--accent-3); 
+    position: fixed; }
+
+.content{ display: block; }
+
+.header{ width: 100%; }
+
+.hero{ color: var(--secondary); text-align: center; text-decoration: 
+    underline overline var(--accent-1); }
+
+.nav{ background-color: var(--primary); width: 100%; height: auto; align-content: center; }
+
+.nav-icon{ width: 50%; align-content: center; }
+
+.service-img{ width: 50%; }
+
+/* .service-info{ position: relative; } */
+
+.service-title{ text-decoration: underline var(--tertiary); }
+
+.subtitle { background-color: var(--secondary); color: var(--accent-3);
+            text-decoration: underline;}
+
+
+/* Modal Settings */
+.button-options{ background: none; background: var(--secondary);
+    color: var(--accent-3); border-width: 2px; border-radius: 10px; text-align: center; }
+
+.button-options:hover{ background-color: var(--tertiary); }
+
+.closeBtn{ color: #aaaaaa; float: right; font-size: 14px; font-weight: bold; }
+
+.closeBtn:focus,
+.closeBtn:hover{ color: var(--accent-1); text-decoration: none; cursor: pointer; }
+
+.modal{ position: fixed; z-index: 1; left: 0; right: 0; height: 100%;
+    width: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5); }
+
+.modal-content{ background-color: var(--accent-3); margin: 25% auto; padding: 20px;
+    border: 1px solid var(--secondary); width: 70%; text-align: justify; }
+
