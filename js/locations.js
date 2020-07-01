@@ -2,6 +2,7 @@ import './jquery'
 function getFloraInfo(){
 }
 
-function toggleStateFloraInfo(stateId){
+function toggleStateFloraInfo(){
+    //On a state select get data for 
 
 }
