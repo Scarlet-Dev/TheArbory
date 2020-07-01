@@ -1,9 +1,22 @@
 import './jquery'
+
 var fields = ['id',
     'Genus','Species', 
     'CommonName', 'Category',
     'Family', 'Kingdom', 
     'NativeStatus', 'Invasive'];
+
+const USFloraData = []
+
+async function getFloraInfo(limit=10, additionalFields = [""]){
+    if(additionalFields == null){
+        fields.concat(...additionalFields);
+    }
+    
+    var plantDB = `https://plantsdb.xyz/search&limit=${limit}&fields=${fields.values}`;
+    USFloraData = await fetch(plantDB).then(data => {return data})
+    
+}
 
 async function searchBy(fieldName, fieldValue){
     var searchData = USFloraData.find();
