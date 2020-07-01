@@ -1,4 +1,10 @@
 import './jquery'
+var fields = ['id',
+    'Genus','Species', 
+    'CommonName', 'Category',
+    'Family', 'Kingdom', 
+    'NativeStatus', 'Invasive'];
+
 async function searchBy(fieldName, fieldValue){
     var searchData = USFloraData.find();
 
