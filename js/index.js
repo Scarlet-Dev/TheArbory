@@ -1,3 +1,5 @@
+import './jquery.js'
+
 $(document).ready(() => {
     console.log('ready')
     $("#head_wrapper").load("../components/_head.html");
