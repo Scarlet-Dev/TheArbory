@@ -1,5 +1,8 @@
 import './jquery'
-function getFloraInfo(){
+async function filterBy(fieldName, fieldValue){
+    var filteredData = USFloraData.filter();
+
+    return await filteredData;
 }
 
 function toggleStateFloraInfo(){
