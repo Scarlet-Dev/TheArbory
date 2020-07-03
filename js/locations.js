@@ -30,6 +30,14 @@ async function filterBy(fieldName, fieldValue){
     return await filteredData;
 }
 
+function toggleStateView(stateId){
+    //First get div element for state pic holder
+    var stateView = $('#stateView');
+
+    //Next change the view 
+    stateView.change()
+}
+
 function toggleStateFloraInfo(){
     //On a state select get data for 
 
