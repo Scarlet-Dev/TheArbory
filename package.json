@@ -1,5 +1,5 @@
 {
-  "name": "TheArbory",
+  "name": "the_arbory",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -17,10 +17,16 @@
     "url": "https://github.com/Scarlet-Dev/TheArbory/issues"
   },
   "homepage": "https://github.com/Scarlet-Dev/TheArbory#readme",
-  "dependencies": {
-    "gulp": "^4.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp-sass": "^4.1.0"
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "run-sequence": "^2.2.1",
+    "uglify": "^0.1.5"
   }
 }
