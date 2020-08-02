@@ -1,4 +1,10 @@
-/*Media Section*/
+@import './colors';
+@import './fonts';
+@import './typography';
+@import './responsive_mixin';
+
+html{
+    /*Media Section*/
 
 /* Phones & Small Screens */
 @media screen and (min-width: 240px) and (max-width: 480px)
@@ -68,56 +74,83 @@
     
     #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
 }
-
-:root{
-    --primary: #4D6D44;
-    --secondary: #559245;
-    --tertiary: #B9DEAF;
-    --accent-1: #ECCC02;
-    --accent-2: #866C20;
-    --accent-3: #F8F8F8;
 }
 
-html{ font-family: 'Maitree' , serif; }
-
-footer{ background-color: var(--accent-2); color: var(--accent-3); 
-    position: fixed; }
+footer{ 
+    background-color: var($accent-2); 
+    color: var($accent-3); 
+    position: fixed; 
+}
 
 .content{ display: block; }
 
 .header{ width: 100%; }
 
-.hero{ color: var(--secondary); text-align: center; text-decoration: 
-    underline overline var(--accent-1); }
+.hero{ 
+    color: var($secondary); 
+    text-align: center; 
+    text-decoration: underline overline var($accent-1); 
+}
 
-.nav{ background-color: var(--primary); width: 100%; height: auto; align-content: center; }
-
-.nav-icon{ width: 50%; align-content: center; }
+/* Nav */
+nav{
+    .nav{
+        background-color: var($primary); 
+        width: 100%; 
+        height: auto; 
+        align-content: center; 
+     }
+ 
+     .nav-icon{ 
+         width: 50%; 
+         align-content: center; 
+     }
+ 
+ }
+ 
+ /* Modal Settings */
+ .modal{
+     position: fixed; 
+     z-index: 1; 
+     left: 0; 
+     right: 0; 
+     height: 100%;
+     width: 100%; 
+     overflow: auto; 
+     background-color: rgba(0, 0, 0, 0.5);
+ 
+     .button-options{ 
+         background: none; 
+         background: var(--secondary);
+         color: var(--accent-3); 
+         border-width: 2px; 
+         border-radius: 10px; 
+         text-align: center; 
+     }
+     
+     .button-options:hover{ 
+         background-color: var($tertiary); 
+     }
+     
+     .closeBtn{
+         color: #aaaaaa; 
+         float: right; 
+         font-size: 14px; 
+         font-weight: bold; 
+     }
+     .closeBtn:focus,
+     .closeBtn:hover{ 
+         color: var(--accent-1); text-decoration: none; cursor: pointer; 
+     }
+ 
+ }
 
 .service-img{ width: 50%; }
 
-/* .service-info{ position: relative; } */
+.service-title{ text-decoration: underline var($tertiary); }
 
-.service-title{ text-decoration: underline var(--tertiary); }
-
-.subtitle { background-color: var(--secondary); color: var(--accent-3);
-            text-decoration: underline;}
-
-
-/* Modal Settings */
-.button-options{ background: none; background: var(--secondary);
-    color: var(--accent-3); border-width: 2px; border-radius: 10px; text-align: center; }
-
-.button-options:hover{ background-color: var(--tertiary); }
-
-.closeBtn{ color: #aaaaaa; float: right; font-size: 14px; font-weight: bold; }
-
-.closeBtn:focus,
-.closeBtn:hover{ color: var(--accent-1); text-decoration: none; cursor: pointer; }
-
-.modal{ position: fixed; z-index: 1; left: 0; right: 0; height: 100%;
-    width: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5); }
-
-.modal-content{ background-color: var(--accent-3); margin: 25% auto; padding: 20px;
-    border: 1px solid var(--secondary); width: 70%; text-align: justify; }
-
+.subtitle{
+    background-color: var($secondary); 
+    color: var($accent-3);
+    text-decoration: underline;
+}
