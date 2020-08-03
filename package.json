@@ -16,5 +16,37 @@
   "bugs": {
     "url": "https://github.com/Scarlet-Dev/TheArbory/issues"
   },
-  "homepage": "https://github.com/Scarlet-Dev/TheArbory#readme"
+  "homepage": "https://github.com/Scarlet-Dev/TheArbory#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^4.0.1",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "autoprefixer": "^9.8.6"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10",
+    "ie >= 10",
+    "ie_mob >= 10",
+    "ff >= 30",
+    "chrome >= 34",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4.4",
+    "bb >= 10"
+  ]
 }
