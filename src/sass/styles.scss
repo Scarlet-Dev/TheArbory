@@ -6,74 +6,74 @@
 html{
     /*Media Section*/
 
-/* Phones & Small Screens */
-@media screen and (min-width: 240px) and (max-width: 480px)
-{
-    body{ margin: auto; padding: auto; }
-    .button-section{ padding: 3em; } 
-    .button-options{ margin: 1em; padding: 1em; }
-    .hero{  display: block; margin: auto; margin-top: 20px; padding-top: 15px; 
-        font-size: 50px; }
-    .info{ text-align: center; }
-    .info p{ padding: 0.5em; font-size: 18px; text-align: justify;}
-    .nav{ padding: auto; width: 100%; }
-    .nav-icon{ width: 80%; display: block; margin: auto; }
-    .subtitle{ width: 100%; display: block; }
+    /* Phones & Small Screens */
+    @media screen and (min-width: 240px) and (max-width: 480px)
+    {
+        body{ margin: auto; padding: auto; }
+        .button-section{ padding: 3em; } 
+        .button-options{ margin: 1em; padding: 1em; }
+        .hero{  display: block; margin: auto; margin-top: 20px; padding-top: 15px; 
+            font-size: 50px; }
+        .info{ text-align: center; }
+        .info p{ padding: 0.5em; font-size: 18px; text-align: justify;}
+        .nav{ padding: auto; width: 100%; }
+        .nav-icon{ width: 80%; display: block; margin: auto; }
+        .subtitle{ width: 100%; display: block; }
 
-    /* Service Div */    
-    .service-info{ display: block; padding: 20px 20px 10px 20px ; margin-top: 10px;
-        position: relative; box-shadow: 0 2px 10px 2px var(--tertiary);}
-    .service-img{ padding: 0px 0px 0px 0px; width: 100%;}     
-    .service-title{ font-size: 22px; }
-    .service-text{ font-size: 18px; text-align: justify;}
-    
-    #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
-}
+        /* Service Div */    
+        .service-info{ display: block; padding: 20px 20px 10px 20px ; margin-top: 10px;
+            position: relative; box-shadow: 0 2px 10px 2px var(--tertiary);}
+        .service-img{ padding: 0px 0px 0px 0px; width: 100%;}     
+        .service-title{ font-size: 22px; }
+        .service-text{ font-size: 18px; text-align: justify;}
+        
+        #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
+    }
 
-/* Tablets */
-@media screen and (min-width: 481px) and (max-width: 768px)
-{
-    /* .button-section{  } */
-    .button-options{ font-size: 30px; }
-    .hero{ display: block; padding: 10px; margin: 25px; font-size: 50px; }
-    .info{ padding: 1em; margin: 1em; text-align: center; }
-    .nav{ padding: auto; }
-    .nav-icon{ display: block; width: 40%; margin: auto; }
-    .subtitle{ width: 100%; display: block; }
+    /* Tablets */
+    @media screen and (min-width: 481px) and (max-width: 768px)
+    {
+        /* .button-section{  } */
+        .button-options{ font-size: 30px; }
+        .hero{ display: block; padding: 10px; margin: 25px; font-size: 50px; }
+        .info{ padding: 1em; margin: 1em; text-align: center; }
+        .nav{ padding: auto; }
+        .nav-icon{ display: block; width: 40%; margin: auto; }
+        .subtitle{ width: 100%; display: block; }
 
-    /* Service Div */
-    .service-img{ height: inherit; width: 100%; } 
-    .service-info{ display: block; margin: auto; margin-top: 10px; 
-        height: auto; width: 80%; box-shadow: 0 2px 10px 2px var(--tertiary); }
-    .service-title{ font-size: 20px; }
-    .service-text{ text-align: justify; margin: 0px 2px 0px 2px; }
-    
-    #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
-}
+        /* Service Div */
+        .service-img{ height: inherit; width: 100%; } 
+        .service-info{ display: block; margin: auto; margin-top: 10px; 
+            height: auto; width: 80%; box-shadow: 0 2px 10px 2px var(--tertiary); }
+        .service-title{ font-size: 20px; }
+        .service-text{ text-align: justify; margin: 0px 2px 0px 2px; }
+        
+        #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
+    }
 
-/* Desktop */
-@media screen and (min-width: 769px){
-    body { width: 80%; margin: auto; }
-    .button-section{ margin: inherit; height: fit-content; width: fit-content; }
-    .button-options{ font-size: 40px;}
-    .hero{ display: block; padding-top: 40px; margin: auto; font-size: 75px; }
-    .info{  margin: auto; text-align: center; width: inherit; }
-    .info p{ font-size: 25px; padding: 1em; }
-    .nav{ padding: auto; }
-    .nav-icon{ display: block; width: 40%; margin: auto; }
-    .other-services{ display: grid; grid-template-columns: 0.5fr 0.5fr; 
-        grid-template-rows: auto; }
-    .subtitle{ width: 100%; display: block; }
+    /* Desktop */
+    @media screen and (min-width: 769px){
+        body { width: 80%; margin: auto; }
+        .button-section{ margin: inherit; height: fit-content; width: fit-content; }
+        .button-options{ font-size: 40px;}
+        .hero{ display: block; padding-top: 40px; margin: auto; font-size: 75px; }
+        .info{  margin: auto; text-align: center; width: inherit; }
+        .info p{ font-size: 25px; padding: 1em; }
+        .nav{ padding: auto; }
+        .nav-icon{ display: block; width: 40%; margin: auto; }
+        .other-services{ display: grid; grid-template-columns: 0.5fr 0.5fr; 
+            grid-template-rows: auto; }
+        .subtitle{ width: 100%; display: block; }
 
-    /* Service div */
-    .service-img{ height: inherit; width: inherit; } 
-    .service-info{ display: block; margin: auto; margin-top: 10px; 
-        height: auto; width: 80%; box-shadow: 0 2px 10px 2px var(--tertiary); }
-    .service-title{ font-size: 20px; }
-    .service-text{ text-align: justify; margin: 0px 2px 0px 2px; }
-    
-    #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
-}
+        /* Service div */
+        .service-img{ height: inherit; width: inherit; } 
+        .service-info{ display: block; margin: auto; margin-top: 10px; 
+            height: auto; width: 80%; box-shadow: 0 2px 10px 2px var(--tertiary); }
+        .service-title{ font-size: 20px; }
+        .service-text{ text-align: justify; margin: 0px 2px 0px 2px; }
+        
+        #credits{ padding: 10px 10px; font-style: bold; font-size: 15px; }
+    }
 }
 
 footer{ 
