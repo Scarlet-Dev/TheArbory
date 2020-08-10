@@ -3,8 +3,15 @@ class Router{
     rootElem;
 
     constructor(routes){
-        this.routes = routes;
-        this.rootElem = document.getElementById('app');
+        try {
+            if(!routes){
+                throw 'error: routes param is mandatory';
+            }
+            this.routes = routes;
+            this.rootElem = document.getElementById('app');
+        } catch (e) {
+            console.error(e)
+        }
     }
 
     init(){
