@@ -1,3 +1,9 @@
+const App = {};
+
+document.addEventListener('DOMContentLoaded', function(){
+    
+})
+
 (function () {
     function init() {
         var router = new Router([
