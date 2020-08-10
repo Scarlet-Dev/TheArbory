@@ -1,39 +1,27 @@
-'use strict'
+class Router{
+    routes;
+    rootElem;
 
-function Router(routes){
-    try{
-        if(!routes){
-            throw ''
-        }
-        this.constructor(routes);
-        this.init();
-    }
-    catch (e){
-        console.error(e);
-    }
-}
-
-Router.prototype = {
-    routes: undefined,
-    rootElem: undefined,
-    constructor: function(routes){
+    constructor(routes){
         this.routes = routes;
-        this.rootElem = document.getElementById('app')
-    },
-    init: function(){
+        this.rootElem = document.getElementById('app');
+    }
+
+    init(){
         var r = this.routes;
         (function(scope, r){
             if(window.location.hash.length > 0){
-                for(var i = 0, length = r.length; i < length; i++){
-                    window.addEventListener('hashchange', function (e){
+                for (var i = 0; i < r.length; i++) {
+                    window.addEventListener('hashchange', function(e) {
                         scope.hasChanged(scope, r)
-                    });
+                    });         
                 }
             }
         })(this, r);
         this.hasChanged(this, r);
-    },
-    hasChanged: function(scope, r) {
+    }
+
+    hasChanged(scope, r) {
         if(window.location.hash.length > 0){
             for (let i = 0; i < r.length; i++) {
                 var route = r[i]
@@ -50,8 +38,9 @@ Router.prototype = {
                 }
             }
         }
-    },
-    goToRoute: function(htmlName){
+    }
+
+    goToRoute(htmlName){
         (function(scope) {
             var url = 'views/' + htmlName,
             xhttp = new XMLHttpRequest();
@@ -65,4 +54,4 @@ Router.prototype = {
             xhttp.send();
         })(this)
     }
-};
+}
