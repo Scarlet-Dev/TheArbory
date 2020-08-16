@@ -1,3 +1,5 @@
+'use strict'
+
 class Router{
     routes;
     rootElem;
@@ -49,7 +51,7 @@ class Router{
 
     goToRoute(htmlName){
         (function(scope) {
-            var url = 'views/' + htmlName,
+            var url = '/views/' + htmlName,
             xhttp = new XMLHttpRequest();
 
             xhttp.onreadystatechange = function () {
